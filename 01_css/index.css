@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: sans-serif;
+}
+
+/* css patern
+tag {
+    parameter: value;
+}
+*/
+
+/* tag selector */
+/* h1 {
+    margin: 20px;
+} */
+
+/* class selector */
+/* .red {
+    color: red;
+} */
+
+/* id selector */
+/* #sub-title{
+    color: blue;
+} */
+
+h1 {
+    /* height: 50px; */
+    /*      y     x    */
+    /* margin: 20px 0px; */
+    margin: 10px 20px 30px 40px;
+    padding: 10px 20px 30px 40px;
+    border: 1px solid red;
+    background-color: gold;
+    border-radius: 50%;
+
+}
+
+#sub-title{
+    margin: 40px 0px;
+    /* color: blue; */
+    /* background-color: rgb(232,123,51); */
+}
+
+
+.font-example {
+    border: 2px solid green;
+}
+
+.font-example2{
+    font-size: 1.8rem ; /*h2 em * rem * 16 = 36px h3 1.17em*/
+    font-family: sans-serif;
+    border: 3px solid gold;
+    color: green;
+}
+
+.font-example2 > h3{
+    color: red;
+    font-weight: 900;
+}
+
+/* h3 {
+    color: red;
+} */
+
+/* px % rem em dp vh vw */
+/* 1rem = 16px */

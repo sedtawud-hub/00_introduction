@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-gray);
+}
+
+main{
+    height: 100vh; /*view port height*/
+    width: 100vw; /*view port widthd*/
+    /* display flex, display grid ต้องไปหา vdo ดูเพิ่มเติมถึงจะเข้าใจมากขึ้น */
+    display: flex;
+    justify-content: center; /* จัดเรียงลูกในแนวแกน x (แนวนอน)*/
+    align-items: center; /* จัดเรียงลูกในแนวแกน y (แนวตั้ง)*/
+}
+
+.card {
+    background-color: var(--white);
+    width: 280px;
+    border-radius: 1.25rem; /* 1.25 rem = 1.25 * 16px */
+    padding: 1rem;
+}
+
+/* select only direct img child of .card div */
+.card > img{
+    width: 100%;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.card-content {
+    color: var(--grayish-blue);
+}
+
+.card-content > h3 {
+    margin: 1rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.card-content > p {
+    margin: 1rem;
+    text-align: center;
+}
+
+/* pseudo class ที่จะใส่ css properties เมื่อ เอาเมาส์ไปวางไว้บน component*/
+.card:hover{
+    box-shadow: 2px 2px 10px var(--grayish-blue);
+    cursor: pointer;
+}
