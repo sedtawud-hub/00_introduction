@@ -1,0 +1,224 @@
+:root {
+    --color-primary: #00a2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    height: 500px;
+    background: url("https://images.unsplash.com/photo-1516563532151-d6f98934293e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a {
+    font-size: 1.5rem;
+}
+
+.header-info {
+    margin-top: 5rem;
+    width: 500px;
+}
+
+.header-info h3 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.header-btn {
+    margin-top: 1rem;
+}
+
+.header-btn input {
+    width: 230px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-btn button {
+    width: 150px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+}
+/* about section */
+.about {
+    padding: 3rem 0rem;
+    text-align: center;
+}
+
+.about-con {
+    padding: 0 10rem;
+}
+
+.about-title {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.about-desc {
+    color: gray;
+    margin: 1rem 0;
+}
+
+.about-img {
+    margin: 3rem 0;
+}
+
+/* pricing section*/
+.pricing {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.pricing-con {
+    padding: 0 10rem;
+}
+
+.pricing-info h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.pricing-info p {
+    margin: 1rem 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pricing-box {
+    background-color: white;
+    color: black;
+}
+
+.pricing-box-title {
+    background-color: lightgray;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.pricing-info {
+    padding: 1rem;
+}
+
+.pricing-blue {
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.pricing-more-info {
+    display: inline-block;
+    width: 100%;
+    background-color: #14df5b;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.newsletter {
+    color: white;
+    background: url("https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjkxfHxjb21wdXRlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.newsletter-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+}
+.newsletter-title h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.newsletter-btn {
+    margin-top: 2rem;
+}
+
+.newsletter-btn input {
+    width: 230px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.newsletter-btn button {
+    width: 150px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+footer {
+    background-color: black;
+    padding: 1rem;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-menu li {
+    margin-right: 1rem;
+}
+
+.footer-menu ul li a {
+    text-transform: uppercase;
+    font-size: 0.825rem;
+}
+
+.footer-logo a {
+    font-size: 1.25rem;
+}
